@@ -1,0 +1,50 @@
+[
+  {
+    "id": "tc_001",
+    "input": "Hey team, my credit card was charged twice for last month's subscription. Can I get a refund?",
+    "expected_category": "billing",
+    "expected_summary": "Customer was charged twice for their subscription and requests a refund.",
+    "difficulty": "easy",
+    "notes": "Standard, clear billing query."
+  },
+  {
+    "id": "tc_002",
+    "input": "I can't log in to my account anymore. It keeps saying 'Invalid Password' even though I reset it 5 minutes ago. Help!!",
+    "expected_category": "account",
+    "expected_summary": "Customer is unable to log in due to persistent password reset errors.",
+    "difficulty": "easy",
+    "notes": "Clear account/authentication issue."
+  },
+  {
+    "id": "tc_003",
+    "input": "Your API keeps dropping connections and throwing 502 Bad Gateway errors when we try to fetch user profiles. Our production site is degrading.",
+    "expected_category": "technical",
+    "expected_summary": "Customer's production environment is experiencing 502 Bad Gateway errors with the user profiles API.",
+    "difficulty": "medium",
+    "notes": "Technical issue with production impact."
+  },
+  {
+    "id": "tc_004",
+    "input": "cancle my service now. bad product.",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to cancel their service due to dissatisfaction.",
+    "difficulty": "medium",
+    "notes": "Short text, spelling errors ('cancle'), requires identifying cancellation as an account event."
+  },
+  {
+    "id": "tc_005",
+    "input": "Hey, I love the platform, but my team is growing and I need to add 15 more seats to our current tier. Also, does our corporate discount apply to the new users, or do we need a new technical integration for unified billing?",
+    "expected_category": "billing",
+    "expected_summary": "Customer wants to add seats to their tier and asks about corporate discount applicability to billing.",
+    "difficulty": "hard",
+    "notes": "Ambiguous edge case. Mentions 'seats' (account), 'technical integration' (technical), but the primary commercial intent is pricing and billing."
+  },
+  {
+    "id": "tc_006",
+    "input": "Wow, fantastic update guys. Love how your latest patch completely broke my webhooks. Truly amazing work.",
+    "expected_category": "technical",
+    "expected_summary": "Customer's webhooks were broken by the latest software update.",
+    "difficulty": "hard",
+    "notes": "Sarcasm test. A naive model might classify this as 'general' or positive because of words like 'Wow' and 'Love'."
+  }
+]
