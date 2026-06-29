@@ -1,0 +1,68 @@
+[
+  {
+    "test_case_id": "tc_001",
+    "input_text": "Hey team, my credit card was charged twice for last month's subscription. Can I get a refund?",
+    "expected_category": "billing",
+    "actual_category": "billing",
+    "category_match": true,
+    "expected_summary": "Customer was charged twice for their subscription and requests a refund.",
+    "actual_summary": "Credit card charged twice for last month's subscription and customer needs a refund",
+    "summary_judge_score": 3,
+    "latency_seconds": 4.655
+  },
+  {
+    "test_case_id": "tc_002",
+    "input_text": "I can't log in to my account anymore. It keeps saying 'Invalid Password' even though I reset it 5 minutes ago. Help!!",
+    "expected_category": "account",
+    "actual_category": "account",
+    "category_match": true,
+    "expected_summary": "Customer is unable to log in due to persistent password reset errors.",
+    "actual_summary": "Unable to log into account with invalid password error message",
+    "summary_judge_score": 3,
+    "latency_seconds": 1.026
+  },
+  {
+    "test_case_id": "tc_003",
+    "input_text": "Your API keeps dropping connections and throwing 502 Bad Gateway errors when we try to fetch user profiles. Our production site is degrading.",
+    "expected_category": "technical",
+    "actual_category": "technical",
+    "category_match": true,
+    "expected_summary": "Customer's production environment is experiencing 502 Bad Gateway errors with the user profiles API.",
+    "actual_summary": "API connection issues causing 502 Bad Gateway errors and degrading production site performance",
+    "summary_judge_score": 4,
+    "latency_seconds": 1.159
+  },
+  {
+    "test_case_id": "tc_004",
+    "input_text": "cancle my service now. bad product.",
+    "expected_category": "account",
+    "actual_category": "technical",
+    "category_match": false,
+    "expected_summary": "Customer wants to cancel their service due to dissatisfaction.",
+    "actual_summary": "Customer requests cancellation of service due to dissatisfaction with the product quality.",
+    "summary_judge_score": 4,
+    "latency_seconds": 1.028
+  },
+  {
+    "test_case_id": "tc_005",
+    "input_text": "Hey, I love the platform, but my team is growing and I need to add 15 more seats to our current tier. Also, does our corporate discount apply to the new users, or do we need a new technical integration for unified billing?",
+    "expected_category": "billing",
+    "actual_category": "billing",
+    "category_match": true,
+    "expected_summary": "Customer wants to add seats to their tier and asks about corporate discount applicability to billing.",
+    "actual_summary": "Need assistance with adding 15 more user seats and understanding if corporate discounts apply to new users.",
+    "summary_judge_score": 3,
+    "latency_seconds": 1.197
+  },
+  {
+    "test_case_id": "tc_006",
+    "input_text": "Wow, fantastic update guys. Love how your latest patch completely broke my webhooks. Truly amazing work.",
+    "expected_category": "technical",
+    "actual_category": "technical",
+    "category_match": true,
+    "expected_summary": "Customer's webhooks were broken by the latest software update.",
+    "actual_summary": "Webhooks stopped working after the latest patch update",
+    "summary_judge_score": 3,
+    "latency_seconds": 0.956
+  }
+]
